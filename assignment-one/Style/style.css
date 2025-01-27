@@ -1,0 +1,214 @@
+/* General Styling Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Webpage Colours */
+:root {
+  --mainBackground: hsla(193, 73%, 47%, 0.939);
+  --navBar: rgba(255, 255, 255, 0.5);
+  --navBarText: #ffffff;
+  --hero: #e2dede;
+  --heroTextAndHeadings: #1a1a40d2;
+  --cardBackground: #f5f5f5;
+  --textcolour: #dcdcdc;
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --backgroundHeadingsButtons: hsl(0, 0%, 95%);
+  --hoverForCards: #ffd700;
+}
+
+/* Styling for body, navBar, and hero */
+body {
+  font-family: "Big Shoulders Display", serif;
+  font-size: 15px;
+  background-image: linear-gradient(to bottom, rgb(87, 9, 22), #212447, teal);
+}
+
+nav {
+  background-color: transparent;
+  width: 100%;
+  color: var(--textcolour);
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#welcome h3 {
+  font-weight: 600;
+  font-size: clamp(10px, 1.5vw, 16px);
+  word-spacing: 1px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#navLinks a {
+  color: var(--textcolour);
+  text-decoration: none;
+  background-color: rgba(21, 20, 20, 0.461);
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: 600;
+  font-size: clamp(10px, 1.5vw, 16px);
+  word-spacing: 1px;
+}
+
+#navLinks a:hover {
+  color: pink;
+}
+
+/* Hero Styling */
+.heroSection {
+  background-image: linear-gradient(to bottom, rgb(87, 9, 22), #212447, teal);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: "Big Shoulders Display", serif;
+  font-weight: bold;
+  color: var(--textcolour);
+  font-size: clamp(40px, 8vw, 100px);
+  text-align: center;
+  padding-block: 10px;
+}
+
+.hero h1 span {
+  color: palevioletred;
+}
+
+/* stylying for main content flex container */
+.mainBackground {
+  display: flex;
+  background-image: linear-gradient(to top, rgb(87, 9, 22), #212447, teal);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.cardCont {
+  display: flex;
+  background-color: transparent;
+  width: 80%;
+  height: 60vh;
+  gap: 30px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  padding: 25px;
+  border-radius: 30px;
+  font-weight: 300;
+  color: var(--textcolour);
+}
+
+h2 {
+  font-size: clamp 1.4rem;
+  padding-top: 10px;
+}
+
+p {
+  font-family: "Lexend Deca", serif;
+  color: #e8efefaf;
+  padding-top: 10px;
+}
+
+ul {
+  font-family: "Lexend Deca", serif;
+  padding-top: 10px;
+}
+
+.card1 {
+  background-color: rgb(87, 9, 22);
+  margin-top: -70px;
+}
+
+.card2 {
+  background-color: teal;
+  margin-top: 70px;
+}
+
+.card3 {
+  background-color: #212447;
+  margin-top: -70px;
+}
+
+.card4 {
+  background-color: #c87283e5;
+  margin-top: 70px;
+}
+
+/* Styling For Back-to-top button */
+.back-to-top {
+  display: flex;
+  background-color: #c87283e5;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  position: fixed;
+  z-index: 2;
+  bottom: 10px;
+  right: 10px;
+}
+
+.back-to-top a {
+  text-decoration: none;
+  color: #dcdcdc;
+  font-weight: 600;
+}
+
+/* styling for footer */
+footer {
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+/* responsive styling */
+@media (max-width: 1024px) {
+  .mainBackground {
+    height: inherit;
+    padding-block: 100px;
+  }
+  .cardCont {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .heroSection {
+    height: 50vh;
+  }
+}

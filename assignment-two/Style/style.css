@@ -1,0 +1,185 @@
+/* General Style Reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Big Shoulders Display", serif;
+    background-color: rgb(174, 215, 240); 
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    color: #687a9c
+}
+
+.navBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navBar h3 {
+    font-size: clamp(10px,2vw,30px);
+    color: #6b60ab;
+}
+.hero {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: clamp(10px,5vw,70px);
+    color:#6b60ab ;
+}
+
+.hero p {
+    font-family: "Lexend Deca", serif;
+    font-size: clamp(5px,1.4vw,30px);
+    color:#6b60ab ;
+}
+
+/* Styling Links*/
+.links {
+    padding: 10px;
+    font-family: "Big Shoulders Display", serif;
+    font-size: clamp(10px,2vw,30px);
+    text-decoration: none;
+    color: #f2f2f2;
+    }
+
+.links a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.links :hover {
+    color: #6b60ab;
+   
+}
+
+
+/* Table Styling */
+ .tableCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: -60px;
+    }
+
+table {
+    width: 80%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse; 
+    border:1px solid black;
+    font-family: "Big Shoulders Display", serif;
+    font-size: clamp(5px,2vw,70px);
+    background-color: rgb(130, 174, 206);
+   
+ }
+
+ /* table tr {
+    
+ } */
+   
+ th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+ }
+
+ td {
+     text-align:left;
+    }
+
+
+/* Row Styling */
+ .Schools tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.Schools tr:hover {
+    background-color: #687a9c;
+} 
+
+
+
+/* Body Styling*/
+
+h1 {
+    text-align: center;
+    color: black;  
+}
+
+
+/* CSS Media.html Styling */
+.hero .paragraphs {
+color: rgb(115, 108, 108);
+text-align: center;
+}
+
+.mediaCont {
+    background-color: rgb(174, 172, 172);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 240vh;
+   }
+
+
+.mediaElements {
+    width:50%;
+    padding: 20px;
+
+}
+
+
+/*Image Styling*/
+#img1 {
+    padding: auto;
+    margin: auto;
+    width: 560px;
+    height: 315px;
+    margin-right: 30px;
+}
+
+/*Footer Styling*/
+#footer {
+    text-align: center;
+}
+
+/* responsice styling */
+
+@media (max-width:425px ) {
+ table {
+    width:50% ;
+    height:40vh ;
+    margin-top: -100px;
+ }
+
+ .hero {
+    height: 45vh;
+ }
+}
+
+/* @media ( max-width:800px){
+    .tableCont {
+        width: 9%;
+        padding: 10px;
+    }
+} */
